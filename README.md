@@ -41,20 +41,20 @@ app.listen(PORT,()=>{
 vamos a explicar cada una de las lineas
 - const express = require("express")
 vamos a usar el paquete express con el nombre express estamos trayendo la herramienta que vamos a usar.
--const app = express()
+- const app = express()
 definimos como la vamos a llamar para usarla
--const PORT = 3006
+- const PORT = 3006
 defino un puerto
--app.set("port", PORT)
+- app.set("port", PORT)
 configuro el puerto de la app
--app.get("/",
+- app.get("/",
 tenemos un verbo de http y una ruta y definimos una funcion que se ejecuta
--(req,res)=>{
+- (req,res)=>{
     -req: la informacion que recibo del cliente
     -res: la respuesta que le doy a este cliente
--res.send("hola mundo")
+- res.send("hola mundo")
 estoy enviando la respuesta "hola mundo"
--})
+- })
 aqui estoy cerrando lo de arriba
 - app.listen(PORT,()=>{
 le dijo que me escuche el puerto
