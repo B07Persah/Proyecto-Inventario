@@ -22,3 +22,5 @@ y en el .gitignore copian
 ```
 node_models
 .env
+```
+y ahora vamos a subir el codigo a Github
