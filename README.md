@@ -66,3 +66,35 @@ Primeros creamos las carpetas con
 ```
 mkdir controllers models routes
 ```
+(pendiente escribir sobre
+exports.holaMundo = (req,res)=>{
+    console.log("hola desde el controlador")
+    res.send("Hola desde el controlador")
+)
+```
+creamos en index.js para crear la ruta
+``
+const inventarioRoutes = require("./routes/inventario")
+```
+`creamos en index.js para crear la ruta
+- app.use("/api/inventario",inventarioRoutes)
+```
+creamos en "controller"
+- exports.leerInventario = (req,res)=>{
+    - console.log("hola controller")
+    - res.send("Hola controller")
+- }
+```
+para conectarnos a la base de datos creamos en el index.js lo siguiente
+- const mongoose = require("mongoose")
+- require("dotenv").config()
+```
+para este paso es necesario tener una cuanta en MongoDB y extraer el link de usuario
+- mongoose.connect("mongodb+srv://yayoper:tech1928@cluster0.tcqko.mongodb.net/")
+- .then(console.log("connect to BD"))
+- .catch(err=> console.error(err))
+
+
+
+
+
