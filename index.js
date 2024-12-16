@@ -7,6 +7,7 @@ const app = express()
 const PORT = 3006
 app.set("port", PORT)
 
+app.use(express.json())
 app.use("/api/hola",holaRoutes)//
 app.use("/api/inventario",inventarioRoutes)//N
 //app.use("/api/herramientas/",herramientasRoutes)
